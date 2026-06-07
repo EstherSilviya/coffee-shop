@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <rect width="500" height="500" fill="#5c3d2e" rx="250"/>
+  <text x="250" y="240" text-anchor="middle" font-family="Arial" font-size="100">☕</text>
+  <text x="250" y="310" text-anchor="middle" font-family="Arial" font-size="22" fill="white">Coffee Splash Image</text>
+</svg>

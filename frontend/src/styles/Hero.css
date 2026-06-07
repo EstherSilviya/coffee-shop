@@ -1,0 +1,123 @@
+/* ===== HERO SECTION ===== */
+.hero {
+  background: var(--dark-brown);
+  min-height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.hero__content {
+  flex: 1;
+  max-width: 580px;
+  z-index: 1;
+}
+
+.hero__tagline {
+  font-family: var(--font-script);
+  font-size: 2.5rem;
+  color: var(--orange);
+  margin-bottom: 18px;
+  display: block;
+}
+
+.hero__title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.hero__description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  margin-bottom: 36px;
+  max-width: 440px;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn--primary {
+  background: var(--orange);
+  color: var(--white);
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(232, 160, 32, 0.4);
+}
+
+.btn--primary:hover {
+  background: var(--orange-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(232, 160, 32, 0.5);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--white);
+  padding: 13px 30px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 2px solid var(--white);
+  transition: var(--transition);
+}
+
+.btn--outline:hover {
+  background: var(--white);
+  color: var(--dark-brown);
+  transform: translateY(-2px);
+}
+
+.hero__image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.hero__image {
+  width: clamp(300px, 45vw, 560px);
+  animation: heroFloat 4s ease-in-out infinite;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+}
+
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-18px); }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 6%;
+    gap: 40px;
+  }
+
+  .hero__description {
+    margin: 0 auto 36px;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+  }
+
+  .hero__image {
+    width: clamp(240px, 70vw, 380px);
+  }
+}

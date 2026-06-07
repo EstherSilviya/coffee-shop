@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#2c3e50" rx="12"/>
+  <text x="200" y="145" text-anchor="middle" font-family="Arial" font-size="20" fill="white" font-weight="bold">Gallery 1</text>
+  <text x="200" y="175" text-anchor="middle" font-family="Arial" font-size="13" fill="rgba(255,255,255,0.7)">Replace with real image</text>
+</svg>

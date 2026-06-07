@@ -1,0 +1,88 @@
+/* ===== CSS RESET & ROOT VARIABLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-brown: #3b0d11;
+  --medium-brown: #5c1a1e;
+  --orange: #e8a020;
+  --orange-hover: #d4901a;
+  --light-bg: #fdf5f5;
+  --dark-bg: #1a1a1a;
+  --white: #ffffff;
+  --text-dark: #1a1a1a;
+  --text-gray: #555555;
+  --font-primary: 'Poppins', sans-serif;
+  --font-script: 'Dancing Script', cursive;
+  --section-padding: 80px 5%;
+  --transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-primary);
+}
+
+/* ===== SCROLLBAR STYLING ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange-hover);
+}
+
+/* ===== SECTION TITLE SHARED STYLE ===== */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.section-underline {
+  width: 80px;
+  height: 3px;
+  background: var(--orange);
+  margin: 0 auto 50px;
+  border-radius: 2px;
+}
